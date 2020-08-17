@@ -1,0 +1,18 @@
+browser Chrome
+browser Firefox
+browser_d Chrome 84.0
+browser_d Firefox 79.0
+duration _DUR_00300
+duration _DUR_00600
+lang en
+lang es
+lang_d en-US
+lang_d es-ES
+os Windows
+os_d Windows NT
+referer (private)
+slug index
+slug pagina-2
+slug pagina-3
+slug pagina-4
+slug pagina-5

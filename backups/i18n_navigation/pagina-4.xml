@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 07 Aug 2020 16:30:02 -0430</pubDate><title><![CDATA[Pagina 4]]></title><url><![CDATA[pagina-4]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><template><![CDATA[template.php]]></template><content><![CDATA[&lt;p&gt;Display child pages&lt;/p&gt;
+
+&lt;p&gt;If you want to always display all the child pages of page main1, this is easily done with&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;ul&amp;gt;&amp;lt;?php get_i18n_navigation(&#039;main1&#039;,1,9); ?&amp;gt;&amp;lt;/ul&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;But if you also want to mark the menu item, if one of these child pages is selected, and display the child page&#039;s children in the menu, it is slightly complexer:&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;ul&amp;gt; &amp;lt;?php $bc = return_i18n_breadcrumbs(return_page_slug()); get_i18n_navigation($bc[0][&#039;url&#039;]==&#039;main1&#039;?return_page_slug():&#039;main1&#039;,1,9); ?&amp;gt; &amp;lt;/ul&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;To display all child pages of the current top menu as title, but do so only if there are child pages, use the following code:&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;?php &amp;nbsp; $bc = return_i18n_breadcrumbs(return_page_slug()); &amp;nbsp; $slug = $bc[0][&#039;url&#039;]; &amp;nbsp; $pages = return_i18n_pages(); &amp;nbsp; if (@$pages[$slug][&#039;children&#039;]) { echo &#039;&amp;lt;h3&amp;gt;&#039;.$bc[0][&#039;menu&#039;].&#039;&amp;lt;/h3&amp;gt;&#039;; echo &#039;&amp;lt;ul class=&quot;sidemenu&quot;&amp;gt;&#039;; get_i18n_navigation(return_page_slug(),1,99); echo &#039;&amp;lt;/ul&amp;gt;&#039;&lt;/p&gt;
+]]></content><author><![CDATA[admin]]></author><parent><![CDATA[]]></parent><menuOrder><![CDATA[2]]></menuOrder><menu><![CDATA[]]></menu><menuStatus><![CDATA[Y]]></menuStatus><private><![CDATA[]]></private></item>

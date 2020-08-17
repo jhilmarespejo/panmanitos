@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel><item><title><![CDATA[component3]]></title><slug>component3</slug><value><![CDATA[&lt;div class=&quot;level1&quot;&gt;
+
+&lt;p&gt;
+Components are easily editable containers for pieces of code or text that can be inserted into a theme template. They are very adaptable and have many uses. At their simplest, components are ideal for small strings of text that are part of a theme file that the website owner may want to edit down the road. Examples are taglines, quotes, or sidebar items. But also:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be used to edit and insert whole blocks of formatted html content into a sidebar, a footer or a multi-column layout.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can contain code so they can be used to insert dynamic content like a gallery, a list of blog posts, an image slider or a contact form.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be included in all pages or individual pages or only in specific pages by conditional statements in the template. See &lt;a href=&quot;/wiki/components-depending-on-the_page&quot; class=&quot;wikilink1&quot; title=&quot;components-depending-on-the_page&quot;&gt;Components Depending On The Page&lt;/a&gt;.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be used to alter items in the head section of a page, for example to add css or a robots.txt&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be used inside other components&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be saved empty, with no content&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+To create a component, log into your administrator panel and goto &lt;strong&gt;Theme → Edit Components&lt;/strong&gt;. From there, it is pretty self explanatory on how to add or edit existing components.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the top right of each component is the PHP coded needed to insert that particular component into a theme file:
+&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&amp;lt;?php get_component(&#039;tagline&#039;); ?&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;strong&gt;Hint&lt;/strong&gt;: To change an existing component&#039;s title, double click the title, and it will change to become editable.
+&lt;a href=&quot;/wiki/_detail/componenet-title.png?id=components&quot; class=&quot;media&quot; title=&quot;componenet-title.png&quot;&gt;&lt;img src=&quot;/wiki/_media/componenet-title.png&quot; class=&quot;media&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;/div&gt;]]></value></item><item><title><![CDATA[Sidebar]]></title><slug>sidebar</slug><value><![CDATA[&lt;h2&gt;GetSimple Features&lt;/h2&gt;
+&lt;ul&gt; 
+&lt;li&gt;XML based data storage&lt;/li&gt; 
+&lt;li&gt;Best-in-Class User Interface&lt;/li&gt; 
+&lt;li&gt;&#039;Undo&#039; protection &amp;amp; backups&lt;/li&gt; 
+&lt;li&gt;Easy to theme&lt;/li&gt; 
+&lt;li&gt;Great documentation&lt;/li&gt; 
+&lt;li&gt;Growing community&lt;/li&gt; 
+&lt;/ul&gt;
+&lt;p&gt;This is your sidebar text. Please change me in &lt;em&gt;Theme -&gt; Edit Components&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://get-simple.info/download/&quot;&gt;Download the Latest GetSimple&lt;/a&gt;&lt;/p&gt;]]></value></item><item><title><![CDATA[Tagline]]></title><slug>tagline</slug><value><![CDATA[Just Another GetSimple Website
+ To create a component, log into your administrator panel and goto Theme → Edit Components. From there, it is pretty self explanatory on how to add or edit existing components.
+
+At the top right of each component is the PHP coded needed to insert that particular component into a theme file: ]]></value></item></channel>
