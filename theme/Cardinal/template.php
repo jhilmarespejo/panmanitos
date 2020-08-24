@@ -1,11 +1,5 @@
 <?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
-/****************************************************
-*
-* @File: 			template.php
-* @Package:		GetSimple
-* @Action:		Cardinal theme for GetSimple CMS
-*
-*****************************************************/
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,82 +42,141 @@
 					</nav>
 			    </div>
 			</div>
+	<?php if(get_page_title(false) != 'Inicio') : ?>		
+		<div class="row jumbotron jumbotron-fluid " id="beadcumb">
+			<?php get_microdata_breadcrumbs(); ?>
+		</div>
+	<?php endif; ?>
 	<div class="container">
-	<div id="header">
-		
-		<div class="col col-12">
-		    	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-		    		<ol class="carousel-indicators">
-		    			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-		    			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-		    			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-		    		</ol>
-		    		<div class="carousel-inner">
-		    			<div class="carousel-item active">
-		    				<img src="<?php get_theme_url(); ?>/images/ci1.jpg" class="d-block w-100" alt="Descripción 1">
-		    				<div class="carousel-caption d-none d-md-block">
-		    					<h5>First slide label</h5>
-		    					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-		    				</div>
-		    			</div>
-		    			<div class="carousel-item">
-		    				<img src="<?php get_theme_url(); ?>/images/ci2.jpg" class="d-block w-100" alt="Descripción 2">
-		    				<div class="carousel-caption d-none d-md-block">
-		    					<h5>Second slide label</h5>
-		    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		    				</div>
-		    			</div>
-		    			<div class="carousel-item">
-		    				<img src="<?php get_theme_url(); ?>/images/ci3.jpg" class="d-block w-100" alt="Descripción 3">
-		    				<div class="carousel-caption d-none d-md-block">
-		    					<h5>Third slide label</h5>
-		    					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-		    				</div>
-		    			</div>
-		    		</div>
-		    		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-		    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    			<span class="sr-only">Previous</span>
-		    		</a>
-		    		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-		    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    			<span class="sr-only">Next</span>
-		    		</a>
-		    	</div>
-		    </div>
-	</div><!-- end header -->
+	
+	<?php if(get_page_title(false) == 'Inicio') : ?>
+		<div id="header">
+			<div class="col col-12">
+				<div id="headerCarousel" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#headerCarousel" data-slide-to="1"></li>
+				    <li data-target="#headerCarousel" data-slide-to="2"></li>
+				    <li data-target="#headerCarousel" data-slide-to="3"></li>
+				    <li data-target="#headerCarousel" data-slide-to="4"></li>
+				    <li data-target="#headerCarousel" data-slide-to="5"></li>
+				  </ol>
+				  <div class="carousel-inner" id="header-carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="<?php get_site_url(); ?>/data/uploads/headerslides/ci1.jpg" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>First slide label</h5>
+				        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="<?php get_site_url(); ?>/data/uploads/headerslides/ci2.jpg" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Second slide label</h5>
+				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="<?php get_site_url(); ?>/data/uploads/headerslides/ci3.jpg" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Third slide label</h5>
+				        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="<?php get_site_url(); ?>/data/uploads/headerslides/ci4.jpg" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Fourth slide label</h5>
+				        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="<?php get_site_url(); ?>/data/uploads/headerslides/ci5.jpg" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Fifth slide label</h5>
+				        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+		</div><!-- end header -->
+	<?php endif; ?>
+
 	
 	<div id="content">
 		<h1><?php get_page_title(); ?></h1>	
 			<div id="page-content">
 				<div class="page-text">
 					<?php get_page_content(); ?>
-					<p class="page-meta">Published on &nbsp;<span><?php get_page_date('F jS, Y'); ?></span></p>
+					<p class="page-meta">Fecha de publiación: &nbsp;<span><?php get_page_date('F jS, Y'); ?></span></p>
 				</div>
 			</div>
 	</div>	
 		
 	<div id="sidebar">
 		
-		<div class="section">
-			<?php get_component('sidebar');	?>
-		</div>
+		<?php if(get_page_title(false) == 'Inicio'): ?>
+			<div class="section">
+				<?php get_component('temathic');?>
+				<?php get_component('mission_vision');?>
 
-		<div class="section credits">
-			<p><?php echo date('Y'); ?> - <strong><?php get_site_name(); ?></strong></p>
-		</div>
+				<div class="container text-center">
+				  <h2 class="font-weight-light">Galería de imagenes y videos</h2>
+				  <div class="row">
+				    <div class="col-sm">
+				    	<?php get_component('index_video_gallery'); ?>
+				    </div>
+				    <div class="col-sm">
+				    	<?php get_component('index_image_gallery'); ?>
+				    </div>
+				  </div>
+				</div>
+				<?php get_component('gallery'); ?>
+			</div>
+		<?php endif; ?>
+		
 	</div>
+
+<p></p>
+<p></p>
+<p></p>
 	
 	<div class="clear"></div>
 	
 	<?php get_footer(); ?>
 </div>
 <!-- end wrapper -->
+
+
+
+
 </body>
 </html>
 <script type="text/javascript">
-
 	$( document ).ready(function() {
-	    $('.carousel').carousel()
+		$('.carousel').carousel({
+			interval: 3000
+		})
+
+		$('.video-carousel').carousel({
+			interval: 5000
+		})
+
+		$('#carouselExampleFade').carousel({
+			interval: 2000
+		})
+
+		$('#galleryCarousel').carousel({
+			interval: 1000
+		})
 	});
 </script>

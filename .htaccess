@@ -8,6 +8,7 @@
 
 # override charset
 AddDefaultCharset UTF-8
+#AddType application/x-httpd-php .xml
 
 # prevent directory listings
 Options -Indexes

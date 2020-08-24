@@ -33,7 +33,7 @@ define('GSIMAGEWIDTH', '200');
 #define('GSADMIN', 'admin');
 
 # Turn on debug mode
-#define('GSDEBUG', TRUE);
+define('GSDEBUG', TRUE);
 
 # Ping search engines upon sitemap generation?
 define('GSDONOTPING', 1);
@@ -54,7 +54,7 @@ define('GSDONOTPING', 1);
 #define('GSNOUPLOADIFY', 0); // 0 to reenable uploadify ( uploadify is outdated flash based and has known xss exploits! USE AT OWN RISK )
 
 # WYSIWYG editor height (default 500)
-#define('GSEDITORHEIGHT', '400');
+define('GSEDITORHEIGHT', '400');
 
 #WYSIWYG toolbars (advanced, basic or [custom config]);
 define('GSEDITORTOOL', 'advanced');

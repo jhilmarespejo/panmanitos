@@ -1,26 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Fri, 07 Aug 2020 19:28:34 -0430</pubDate><title><![CDATA[Pagina 1]]></title><url><![CDATA[index]]></url><meta><![CDATA[getsimple, easy, content management system]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Inicio]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php if (basename($_SERVER[&#039;PHP_SELF&#039;]) == &#039;gsconfig.php&#039;) { 
-	die(&#039;You cannot load this page directly.&#039;);
-}; ?&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;?php echo &quot;sssssssss ddddddddddddddd fffffffffffffffffff&quot;; ?&gt;
+<item><pubDate>Wed, 19 Aug 2020 00:28:37 -0430</pubDate><title><![CDATA[Inicio]]></title><url><![CDATA[index]]></url><meta><![CDATA[getsimple, easy, content management system]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Inicio]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;El texto asume que está trabajando en un servidor web&lt;/p&gt;
 
-&lt;p&gt;Cambiando el tema&lt;/p&gt;
+&lt;p&gt;CARROUSEL&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+  &lt;div class=&quot;container my-4&quot;&gt;
 
-&lt;p&gt;Agregar contenido&lt;/p&gt;
+    
+    &lt;!--Carousel Wrapper--&gt;
+    &lt;div id=&quot;multi-item-temathic&quot; class=&quot;temathicCarousel slide carousel-multi-item&quot; data-ride=&quot;carousel&quot;&gt;
 
-&lt;p&gt;Subiendo una imagen&lt;/p&gt;
+      &lt;!--Controls--&gt;
+      &lt;div class=&quot;controls-top&quot;&gt;
+        &lt;a class=&quot;btn-floating&quot; href=&quot;#multi-item-temathic&quot; data-slide=&quot;prev&quot;&gt;&lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a class=&quot;btn-floating&quot; href=&quot;#multi-item-temathic&quot; data-slide=&quot;next&quot;&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;!--/.Controls--&gt;
 
-&lt;p&gt;Crear nuevas páginas&lt;/p&gt;
+      &lt;!--Indicators--&gt;
+      &lt;ol class=&quot;carousel-indicators&quot;&gt;
+        &lt;li data-target=&quot;#multi-item-temathic&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+        &lt;li data-target=&quot;#multi-item-temathic&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+        &lt;li data-target=&quot;#multi-item-temathic&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;!--/.Indicators--&gt;
 
-&lt;p&gt;Usando &#039;componentes&#039;&lt;/p&gt;
+      &lt;!--Slides--&gt;
+      &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
 
-&lt;p&gt;Instalar un complemento&lt;/p&gt;
+        &lt;!--First slide--&gt;
+        &lt;div class=&quot;carousel-item col-xs-12 active&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4 clearfix d-none d-md-block&quot;&gt;
+              &lt;div class=&quot;card mb-2&quot;&gt;
+				  &lt;img src=&quot;&lt;?php get_site_url();?&gt;/data/uploads/thematic/thfcc-1.jpeg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+				    &lt;h5 class=&quot;card-title&quot;&gt;Tema/tematica 1&lt;/h5&gt;
+				    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the Tema/tematica 1 and make up the bulk of the card&#039;s content.&lt;/p&gt;
+				    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+				  &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
 
-&lt;p&gt;Hacer una copia de seguridad&lt;/p&gt;
+            &lt;div class=&quot;col-md-4 clearfix d-none d-md-block&quot;&gt;
+              &lt;div class=&quot;card mb-2&quot;&gt;
+                &lt;img src=&quot;&lt;?php get_site_url();?&gt;/data/uploads/thematic/thfcc-2.jpeg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+				    &lt;h5 class=&quot;card-title&quot;&gt;Tema/tematica 2&lt;/h5&gt;
+				    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the Tema/tematica 2 and make up the bulk of the card&#039;s content.&lt;/p&gt;
+				    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+				  &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
 
-&lt;p&gt;Debería tomar entre diez y veinte minutos. Si tiene alguna dificultad con el tutorial, eche un vistazo al hilo del foro GetSimple . El texto asume que está trabajando en un servidor web, pero puede completar el tutorial en localhost si ha configurado un servidor WAMP o LAMP en un escritorio.&lt;/p&gt;
-]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>
+            &lt;div class=&quot;col-md-4 clearfix d-none d-md-block&quot;&gt;
+              &lt;div class=&quot;card mb-2&quot;&gt;
+                &lt;img src=&quot;&lt;?php get_site_url();?&gt;/data/uploads/thematic/thfcc-3.jpeg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+				    &lt;h5 class=&quot;card-title&quot;&gt;Tema/tematica 3&lt;/h5&gt;
+				    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the Tema/tematica 3 and make up the bulk of the card&#039;s content.&lt;/p&gt;
+				    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+				  &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--/.First slide--&gt;
+
+        &lt;!--Second slide--&gt;
+        &lt;div class=&quot;carousel-item col-xs-12&quot;&gt;
+
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4 clearfix d-none d-md-block&quot;&gt;
+              &lt;div class=&quot;card mb-2&quot;&gt;
+                &lt;img src=&quot;&lt;?php get_site_url();?&gt;/data/uploads/thematic/thfcc-4.jpeg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+				    &lt;h5 class=&quot;card-title&quot;&gt;Tema/tematica 4&lt;/h5&gt;
+				    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the Tema/tematica 4 and make up the bulk of the card&#039;s content.&lt;/p&gt;
+				    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+				  &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-md-4 clearfix d-none d-md-block&quot;&gt;
+              &lt;div class=&quot;card mb-2&quot;&gt;
+                &lt;img src=&quot;&lt;?php get_site_url();?&gt;/data/uploads/thematic/thfcc-5.jpeg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+				    &lt;h5 class=&quot;card-title&quot;&gt;Tema/tematica 5&lt;/h5&gt;
+				    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the Tema/tematica 5 and make up the bulk of the card&#039;s content.&lt;/p&gt;
+				    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+				  &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-md-4 clearfix d-none d-md-block&quot;&gt;
+              &lt;div class=&quot;card mb-2&quot;&gt;
+                &lt;img src=&quot;&lt;?php get_site_url();?&gt;/data/uploads/thematic/thfcc-6.jpeg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+				    &lt;h5 class=&quot;card-title&quot;&gt;Tema/tematica 6&lt;/h5&gt;
+				    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the Tema/tematica 6 and make up the bulk of the card&#039;s content.&lt;/p&gt;
+				    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+				  &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;!--/.Second slide--&gt;
+
+       
+
+      &lt;/div&gt;
+      &lt;!--/.Slides--&gt;
+
+    &lt;/div&gt;
+    &lt;!--/.Carousel Wrapper--&gt;
+
+
+  &lt;/div&gt;]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channel><item><title><![CDATA[component3]]></title><slug>component3</slug><value><![CDATA[&lt;div class=&quot;level1&quot;&gt;
-
-&lt;p&gt;
-Components are easily editable containers for pieces of code or text that can be inserted into a theme template. They are very adaptable and have many uses. At their simplest, components are ideal for small strings of text that are part of a theme file that the website owner may want to edit down the road. Examples are taglines, quotes, or sidebar items. But also:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be used to edit and insert whole blocks of formatted html content into a sidebar, a footer or a multi-column layout.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can contain code so they can be used to insert dynamic content like a gallery, a list of blog posts, an image slider or a contact form.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be included in all pages or individual pages or only in specific pages by conditional statements in the template. See &lt;a href=&quot;/wiki/components-depending-on-the_page&quot; class=&quot;wikilink1&quot; title=&quot;components-depending-on-the_page&quot;&gt;Components Depending On The Page&lt;/a&gt;.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be used to alter items in the head section of a page, for example to add css or a robots.txt&lt;/div&gt;
-&lt;/li&gt;
-&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be used inside other components&lt;/div&gt;
-&lt;/li&gt;
-&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; Components can be saved empty, with no content&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-To create a component, log into your administrator panel and goto &lt;strong&gt;Theme → Edit Components&lt;/strong&gt;. From there, it is pretty self explanatory on how to add or edit existing components.
-&lt;/p&gt;
-
-&lt;p&gt;
-At the top right of each component is the PHP coded needed to insert that particular component into a theme file:
-&lt;/p&gt;
-&lt;pre class=&quot;code&quot;&gt;&amp;lt;?php get_component(&#039;tagline&#039;); ?&amp;gt;&lt;/pre&gt;
-
-&lt;p&gt;
-&lt;strong&gt;Hint&lt;/strong&gt;: To change an existing component&#039;s title, double click the title, and it will change to become editable.
-&lt;a href=&quot;/wiki/_detail/componenet-title.png?id=components&quot; class=&quot;media&quot; title=&quot;componenet-title.png&quot;&gt;&lt;img src=&quot;/wiki/_media/componenet-title.png&quot; class=&quot;media&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;/div&gt;]]></value></item><item><title><![CDATA[Sidebar]]></title><slug>sidebar</slug><value><![CDATA[&lt;h2&gt;GetSimple Features&lt;/h2&gt;
+<channel><item><title><![CDATA[gallery]]></title><slug>gallery</slug><value><![CDATA[]]></value></item><item><title><![CDATA[index_image_gallery]]></title><slug>index_image_gallery</slug><value><![CDATA[&lt;?php if (function_exists(&#039;GetMyGallery&#039;)) { print GetMyGallery(&#039;805ed3e038b8fd8&#039;); } ?&gt;
+&lt;/div&gt;]]></value></item><item><title><![CDATA[index_video_gallery]]></title><slug>index_video_gallery</slug><value><![CDATA[&lt;div id=&quot;videoCarousel&quot; class=&quot;card video-carousel carouselx slide&quot; data-ride=&quot;video-carousel&quot;&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;card-body carousel-item active&quot; &gt;
+      &lt;iframe style=&quot;width: 100%; height: 270px;&quot; src=&quot;https://www.youtube.com/embed/jC9M_-s-nu4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-body carousel-item&quot; &gt;
+      &lt;iframe style=&quot;width: 100%; height: 270px;&quot; src=&quot;https://www.youtube.com/embed/MZz8gt4WStU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-body carousel-item&quot; &gt;
+      &lt;iframe style=&quot;width: 100%; height: 270px;&quot; src=&quot;https://www.youtube.com/embed/AI4272ErnkA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#videoCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Previo&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#videoCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Siguiente&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;]]></value></item><item><title><![CDATA[mission_vision]]></title><slug>mision_vision</slug><value><![CDATA[&lt;div class=&quot;container text-center&quot;&gt;
+  &lt;h2 class=&quot;font-weight-light&quot;&gt;Misión y Visión del Programa &lt;/h2&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Misión&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card&#039;s content.&lt;/p&gt;
+          &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Visión&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card&#039;s content.&lt;/p&gt;
+          &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Más información&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]></value></item><item><title><![CDATA[sidebar]]></title><slug>sidebar</slug><value><![CDATA[&lt;h2&gt;GetSimple Features&lt;/h2&gt;
 &lt;ul&gt; 
 &lt;li&gt;XML based data storage&lt;/li&gt; 
 &lt;li&gt;Best-in-Class User Interface&lt;/li&gt; 
@@ -43,4 +54,131 @@ At the top right of each component is the PHP coded needed to insert that partic
 &lt;li&gt;Growing community&lt;/li&gt; 
 &lt;/ul&gt;
 &lt;p&gt;This is your sidebar text. Please change me in &lt;em&gt;Theme -&gt; Edit Components&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://get-simple.info/download/&quot;&gt;Download the Latest GetSimple&lt;/a&gt;&lt;/p&gt;]]></value></item><item><title><![CDATA[Tagline]]></title><slug>tagline</slug><value><![CDATA[Just Another GetSimple Website]]></value></item></channel>
+&lt;p&gt;&lt;a href=&quot;http://get-simple.info/download/&quot;&gt;Download the Latest GetSimple&lt;/a&gt;&lt;/p&gt;]]></value></item><item><title><![CDATA[temathic]]></title><slug>temathic</slug><value><![CDATA[&lt;div class=&quot;container text-center my-3&quot;&gt;
+    &lt;h2 class=&quot;font-weight-light&quot;&gt;Ejes temáticos&lt;/h2&gt;
+    &lt;div class=&quot;row mx-auto my-auto&quot;&gt;
+        &lt;div id=&quot;temathicCarousel&quot; class=&quot;carousel temathic-carousel slide w-100&quot; data-ride=&quot;carousel&quot;&gt;
+            &lt;div class=&quot;carousel-inner w-100&quot; role=&quot;listbox&quot;&gt;
+                &lt;div class=&quot;carousel-item active&quot;&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=1&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;carousel-item&quot;&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=2&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;carousel-item&quot;&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=3&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;carousel-item&quot;&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=4&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;carousel-item&quot;&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=5&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;carousel-item&quot;&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=6&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;carousel-item&quot;&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=6&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;a class=&quot;carousel-control-prev w-auto&quot; href=&quot;#temathicCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+                &lt;span class=&quot;carousel-control-prev-icon bg-dark border border-dark rounded-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class=&quot;carousel-control-next w-auto&quot; href=&quot;#temathicCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+                &lt;span class=&quot;carousel-control-next-icon bg-dark border border-dark rounded-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(&#039;#temathicCarousel&#039;).carousel({
+      interval: 5000
+    })
+
+    $(&#039;.temathic-carousel .carousel-item&#039;).each(function(){
+        var minPerSlide = 3;
+        var next = $(this).next();
+        if (!next.length) {
+        next = $(this).siblings(&#039;:first&#039;);
+        }
+        next.children(&#039;:first-child&#039;).clone().appendTo($(this));
+        
+        for (var i=0;i&lt;minPerSlide;i++) {
+            next=next.next();
+            if (!next.length) {
+                next = $(this).siblings(&#039;:first&#039;);
+            }
+            
+            next.children(&#039;:first-child&#039;).clone().appendTo($(this));
+          }
+    });
+
+&lt;/script&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+    @media (max-width: 768px) {
+    .carousel-inner .carousel-item &gt; div {
+        display: none;
+    }
+    .carousel-inner .carousel-item &gt; div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+&lt;/style&gt;]]></value></item></channel>

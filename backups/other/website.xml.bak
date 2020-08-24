@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item><SITENAME>panmanitos</SITENAME><SITEURL>http://localhost/panmanitos/</SITEURL><TEMPLATE><![CDATA[Cardinal]]></TEMPLATE><PRETTYURLS>1</PRETTYURLS><PERMALINK/></item>
+<item><SITENAME><![CDATA[panmanitos]]></SITENAME><SITEURL><![CDATA[http://192.168.100.29/panmanitos/]]></SITEURL><TEMPLATE><![CDATA[Cardinal]]></TEMPLATE><PRETTYURLS>1</PRETTYURLS><PERMALINK/></item>

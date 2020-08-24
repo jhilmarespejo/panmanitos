@@ -1,0 +1,8 @@
+<Files baguettebox.css>
+order allow,deny
+allow from all
+</Files>
+<Files baguettebox.js>
+order allow,deny
+allow from all
+</Files>

@@ -10260,7 +10260,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-/*#JE: PERSONALIZED STYLES*/
+/* # # # # # # # # # # # # # # # # # # # #JE: PERSONALIZED STYLES # # # # # # # # # # # # # # # # #*/
+#header-carousel-inner{
+  height: 250px;
+}
 @media (min-width: 500px) {
   a.logo img {
     width: 25%;
@@ -10273,9 +10276,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-div.carousel-item {
-  height: 280px;
-}
 
 #headerMenu{
   background-image: url('/panmanitos/theme/Cardinal/images/sky2.jpg');
@@ -10288,9 +10288,9 @@ div.carousel-item {
 @font-face {
     font-family: 'LobsterTwo';
     src:url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.woff') format('woff'),
-        url('LobsterTwo.ttf.svg#LobsterTwo') format('svg'),
-        url('LobsterTwo.ttf.eot'),
-        url('LobsterTwo.ttf.eot?#iefix') format('embedded-opentype'); 
+        url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.svg#LobsterTwo') format('svg'),
+        url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.eot'),
+        url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -10323,17 +10323,3 @@ div.carousel-item {
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px #000;
 }
-/*#firstMenu li a{
-  content: "";
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-height: 4px;
-background: rgba(255, 15, 15, 0.24);
-
-border-bottom-right-radius: 4px;
-border-bottom-left-radius: 4px;
-}*/
-
-

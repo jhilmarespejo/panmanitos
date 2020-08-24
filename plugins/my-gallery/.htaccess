@@ -1,0 +1,8 @@
+<Files windows.css>
+order allow,deny
+allow from all
+</Files>
+<Files windows.js>
+order allow,deny
+allow from all
+</Files>
