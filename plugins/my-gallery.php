@@ -83,7 +83,7 @@ function GetMyGallery($my_gallery_dir = 'no-galleries') {
    
 $return = '';
 $return .= '
-<div id="galleryCarousel" data-ride="gallery-carousel" class="card carousel allery-carousel slide carousel-fade baguetteBoxOne baguetteBox_gallery baguetteBox_'.$my_gallery_thisfile.'_'.$my_gallery_dir.'"><div class="carousel-inner">';
+<div id="imageGalleryCarousel" data-ride="gallery-carousel" class="card carousel allery-carousel slide carousel-fade baguetteBoxOne baguetteBox_gallery baguetteBox_'.$my_gallery_thisfile.'_'.$my_gallery_dir.'"><div class="carousel-inner">';
         if (file_exists(GSROOTPATH.'plugins/'.$my_gallery_thisfile.'/galleries/'.$my_gallery_dir.'/cache_gallery.dat')) {
 			$arr = file(GSROOTPATH.'plugins/'.$my_gallery_thisfile.'/galleries/'.$my_gallery_dir.'/cache_gallery.dat', FILE_IGNORE_NEW_LINES);
 			$nom = count($arr);
@@ -119,11 +119,11 @@ $return .= '
 		}	
 $return .= '
 	</div>
-	  <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+	  <a class="carousel-control-prev" href="#imageGalleryCarousel" role="button" data-slide="prev">
 	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	    <span class="sr-only">Previous</span>
 	  </a>
-	  <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+	  <a class="carousel-control-next" href="#imageGalleryCarousel" role="button" data-slide="next">
 	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 	    <span class="sr-only">Next</span>
 	  </a>

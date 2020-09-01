@@ -10,13 +10,13 @@
 	<meta name="robots" content="index, follow" />
 	<meta charset="utf-8">
 
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/bootstrap451/css/bootstrap.css" media="screen" /> 
 	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/bootstrap451/css/bootstrap-grid.min.css" media="screen" />
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 	<script src="<?php get_theme_url(); ?>/bootstrap451/js/jquery.min.js"></script> 
 	<script src="<?php get_theme_url(); ?>/bootstrap451/js/bootstrap.min.js"></script> 
-
 </head>
 <body id="<?php get_page_slug(); ?>" >
 	<div class="row jumbotron jumbotron-fluid " id="headerMenu">
@@ -133,10 +133,10 @@
 					<div class="container text-center">
 					  <h2 class="font-weight-light">Galería de imagenes y videos</h2>
 					  <div class="row">
-					    <div class="col-sm">
+					    <div class="col-sm video-g ">
 					    	<?php get_component('index_video_gallery'); ?>
 					    </div>
-					    <div class="col-sm">
+					    <div class="col-sm image-g ">
 					    	<?php get_component('index_image_gallery'); ?>
 					    </div>
 					  </div>
@@ -157,10 +157,11 @@
 	</div> <!-- end <div class="container"> -->
 
 </body>
+<footer class="img-fluid foot-one">xxxxxl</footer>
 </html>
 <script type="text/javascript">
 	$( document ).ready(function() {
-		$('.carousel').carousel({
+		$('#headerCarousel').carousel({
 			interval: 90000
 		})
 
@@ -168,11 +169,7 @@
 			interval: 5000
 		})
 
-		$('#carouselExampleFade').carousel({
-			interval: 2000
-		})
-
-		$('#galleryCarousel').carousel({
+		$('#imageGalleryCarousel').carousel({
 			interval: 1000
 		})
 	});

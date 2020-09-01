@@ -6,7 +6,7 @@
  * @subpackage Config
  */
 
-$site_full_name     = 'GetSimple';
+$site_full_name     = 'PanManitos';
 $site_version_no    = '3.3.16';
 $name_url_clean     = lowercase(str_replace(' ','-',$site_full_name));
 $ver_no_clean       = str_replace('.','',$site_version_no);
@@ -18,10 +18,10 @@ $cookie_login       = 'index.php'; // login redirect
 $cookie_time        = '10800';     // in seconds, 3 hours
 $cookie_path        = '/';         // cookie path
 $cookie_domain      = null;        // cookie domain
-$cookie_secure      = null;        // cookie secure only
-$cookie_httponly    = true;        // cookie http only
-
-$api_url            = 'http://get-simple.info/api/start/v3.php';
+$cookie_secure      = null;       // cookie secure only
+$cookie_httponly    = null;        // cookie http only
+$SameSite			= true;
+//$api_url            = 'http://get-simple.info/api/start/v3.php';
 # $api_timeout        = 800; // time in ms defaults to 500
 # $debugApi           = true;
 

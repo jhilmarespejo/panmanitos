@@ -60,7 +60,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #fcfad5;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10265,8 +10265,17 @@ a.text-dark:hover, a.text-dark:focus {
   height: 250px;
 }*/
 
+
+
+/*a#logo1 img{
+width: 20%;
+margin: 2%;
+}*/
+
+
+
 #headerCarousel {
-  border: 10px solid #ecc8ae
+  border: 10px solid #fff;
   border-radius: 10px;
   margin-bottom: -100px;
 }
@@ -10276,38 +10285,37 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 100px;
 }
 
-border-radius: 10px;
-@media (min-width: 500px) {
-  a.logo img {
-    width: 25%;
-  }
-}
-
-@media (max-width: 500px) {
-  a.logo img {
-    width: 55%;
-  }
-}
-
 
 #headerMenu{
-  background-image: url('/panmanitos/theme/Cardinal/images/sky2.jpg');
+  background-image: url('/panmanitos/theme/Cardinal/images/sky1.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #8bd1ee;
 }
+.foot-one{
+  background-image: url('/panmanitos/theme/Cardinal/images/foot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #8bd1ee;
+  height: 110px;
+}
+body{
+  background-image: url('/panmanitos/theme/Cardinal/images/pattern3.png');
+  background-color: #ffd10036;
 
+}
     /*src:url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.woff') format('woff'),*/
         
-@font-face {
+/*@font-face {
     font-family: 'LobsterTwo';
-    src:url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.woff') format('woff'),
-        url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.svg#LobsterTwo') format('svg'),
-        url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.eot'),
-        url('/panmanitos/theme/Cardinal/fonts/LobsterTwo/LobsterTwo.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('/panmanitos/theme/Cardinal/fonts/LobsterTwoo/LobsterTwo.ttf.woff') format('woff'),
+        url('/panmanitos/theme/Cardinal/fonts/LobsterTwoo/LobsterTwo.ttf.svg#LobsterTwo') format('svg'),
+        url('/panmanitos/theme/Cardinal/fonts/LobsterTwoo/LobsterTwo.ttf.eot'),
+        url('/panmanitos/theme/Cardinal/fonts/LobsterTwoo/LobsterTwo.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 #firstMenu li{
     /*background: #faee00;
     border-radius: 8%;
@@ -10330,9 +10338,31 @@ border-radius: 10px;
 }
 
 #firstMenu li a{
-  font-family: 'LobsterTwo';
+  font-family: 'Lobster Two', cursive;
   color: #FFF;
   font-size: 23px;
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px #000;
+  line-height: 1.5;
 }
+
+@media (max-width: 500px) {
+   .foot-one{
+    height: 50px;
+  }
+}
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    }
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
