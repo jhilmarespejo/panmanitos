@@ -135,8 +135,8 @@ function get_microdata_breadcrumbs()
     } 
     ?>
 
-<nav aria-label="breadcrumb" class="xbreadcrumb">
-    <!-- <h3><?php get_page_title(); ?></h3><br> -->
+<nav aria-label="breadcrumb" class="index-breadcrumb">
+    <h5><?php get_page_title(); ?></h5>
     <ol class="breadcrumb">
         <li class="breadcrumb-item" >
             <a href="<?php get_site_url(); ?>" itemprop="url">
@@ -151,7 +151,7 @@ function get_microdata_breadcrumbs()
                     <span itemprop="title"><?php echo $_slugs[$j]['title']; ?></span>
                 </a>
             </li>
-            <li class="breadcrumb-item"><?php echo $_separator; ?> </li>
+            <!-- <li class="breadcrumb-item"><?//php echo $_separator; ?> </li> -->
         <?php } ?>
         <li class="breadcrumb-item" >
             <span itemprop="title"><?php echo $_slugs[0]['title']; ?></span>

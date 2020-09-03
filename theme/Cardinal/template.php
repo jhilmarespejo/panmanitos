@@ -9,6 +9,7 @@
 	<?php get_header(); ?>
 	<meta name="robots" content="index, follow" />
 	<meta charset="utf-8">
+	<link rel="icon" href="<?php get_theme_url(); ?>/images/favicon.ico" type="image/x-icon" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/bootstrap451/css/bootstrap.css" media="screen" /> 
@@ -105,7 +106,7 @@
 			</div><!-- end header -->
 		<?php endif; ?>
 	</div> <!-- <div class="row jumbotron jumbotron-fluid " id="headerMenu"> -->
-	<?php if(get_page_title(false) != 'Inicio') : ?>		
+	<?php if(get_page_title(false) != 'Inicio') : ?>	
 		<div class="row jumbotron jumbotron-fluid " id="beadcumb">
 			<?php get_microdata_breadcrumbs(); ?>
 		</div>
@@ -128,10 +129,11 @@
 			<?php if(get_page_title(false) == 'Inicio'): ?>
 				<div class="section">
 					<?php get_component('temathic');?>
-					<?php get_component('mission_vision');?>
-
+					<br><br>
+					<?php get_component('mission_vision'); ?>
+					<br><br>
 					<div class="container text-center">
-					  <h2 class="font-weight-light">Galería de imagenes y videos</h2>
+					  <h2 class="font-weight-light component">Galería de imagenes y videos</h2>
 					  <div class="row">
 					    <div class="col-sm video-g ">
 					    	<?php get_component('index_video_gallery'); ?>

@@ -1,1 +1,1 @@
-{"status":"error","message":"invalid id: exec-php.php"}
+{"status":-1}
