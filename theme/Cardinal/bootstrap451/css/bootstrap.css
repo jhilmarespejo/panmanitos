@@ -7152,7 +7152,7 @@ button.bg-dark:focus {
 }
 
 .embed-responsive-16by9::before {
-  padding-top: 56.25%;
+  padding-top: 58.25%;
 }
 
 .embed-responsive-4by3::before {
@@ -10287,10 +10287,10 @@ margin: 2%;
 
 
 #headerMenu{
-  background-image: url('/panmanitos/theme/Cardinal/images/sky6.jpg');
-  background-size: cover;
+  background-image: url('/panmanitos/theme/Cardinal/images/sky7.png');
+  /*background-size: cover;*/
   background-repeat: no-repeat;
-  background-color: #6bd4ff;
+  /*background: linear-gradient(#3D6CC4, #D1741D, #D1741D 80%,  #EC331C);*/
 }
 .foot-one{
   background-image: url('/panmanitos/theme/Cardinal/images/foot.png');
@@ -10352,20 +10352,7 @@ body{
   }
 }
 
-.video-responsive {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    position: relative;
-    }
-.video-responsive iframe, .video-responsive object, .video-responsive embed {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    }
+
 #beadcumb{
   border-top: 7px solid #fee6b4;
   padding: 0px;
@@ -10379,9 +10366,14 @@ body{
     font-family: 'Lobster Two', cursive;
     color: #936632;
 }
-.mission > .card, .vision > .card{
+.mission > .card, .vision > .card, .index-calendar, a.page-link{
   background-color: #fee6b4;
    color: #936632;
+}
+a.page-link:hover{
+  background-color: #f9d281;
+  color: #936632;
+  font-weight: bold;
 }
 
 h2.component, #content h1{
@@ -10393,3 +10385,20 @@ h2.component, #content h1{
   background: #fff;
   padding: 5%;
 }
+
+.table td{
+  border: 1px solid #ffd195;
+}
+.thead-yellow{
+  border: 1px solid #ffd195;
+  background-color: #f9d281;
+  color: #000;
+  text-align: center;
+}
+.table-hover tbody tr:hover {
+  
+  background-color: rgba(255, 171, 2, 0.16);
+}
+/* # # # # effect fade # # # # # */
+
+

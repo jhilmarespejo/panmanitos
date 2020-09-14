@@ -1,5 +1,4 @@
 <?php
-
 function c_firstDay($month, $year) {
     $day = date('N', mktime(0,0,0,$month,1,$year));
     return $day;
@@ -22,23 +21,23 @@ function c_monthChange($where) {
     $year_m = $_GET['year'] - 1;
     $year_p = $_GET['year'] + 1;
     
-    echo '<center>';
+    echo '<nav aria-label="Page navigation"> <ul class="pagination justify-content-center">';
     if($_GET['month'] == 1) {
         $month_m = 12;
-        echo '<a href="'.$where.'&month='.$month_m.'&year='.$year_m.'">'.$months[$month_m].' '.$year_m.'</a>';
+        echo '<li class="page-item"> <a class="page-link" href="'.$where.'&month='.$month_m.'&year='.$year_m.'">'.$months[$month_m].' '.$year_m.'</a></li>';
     } else {
-        echo '<a href="'.$where.'&month='.$month_m.'&year='.$_GET['year'].'">'.$months[$month_m].' '.$_GET['year'].'</a>';
+        echo '<li class="page-item"> <a class="page-link" href="'.$where.'&month='.$month_m.'&year='.$_GET['year'].'">'.$months[$month_m].' '.$_GET['year'].'</a></li>';
     }
     
-    echo ' << '.$months[$_GET['month']].' '.$_GET['year'].' >> ';
+    echo '<a class="page-link font-weight-bold" >'.$months[$_GET['month']].' '.$_GET['year'].' </a>';
     
     if($_GET['month'] == 12) {
         $month_p = 1;
-        echo '<a href="'.$where.'&month='.$month_p.'&year='.$year_p.'">'.$months[$month_p].' '.$year_p.'</a>';
+        echo '<li class="page-item"><a class="page-link" href="'.$where.'&month='.$month_p.'&year='.$year_p.'">'.$months[$month_p].' '.$year_p.'</a></li>';
     } else {
-        echo '<a href="'.$where.'&month='.$month_p.'&year='.$_GET['year'].'">'.$months[$month_p].' '.$_GET['year'].'</a>';
+        echo '<li class="page-item"><a class="page-link" href="'.$where.'&month='.$month_p.'&year='.$_GET['year'].'">'.$months[$month_p].' '.$_GET['year'].'</a></li>';
     }
-    echo '</center>';
+    echo '</ul></nav>';
 }
 
 function c_repetitionCheck($repetition, $dateYear, $dateMonth, $dateDay, $day, $month, $year) {
@@ -96,10 +95,11 @@ function c_calendar($month, $year, $link, $eventsIF = True) {
                     # czy mam pokazywać wydarzenia
                     if($eventsIF != False) {
                         if(strlen($title) > 12) {
-                            $title = substr($title, 0, 12).'(..)';
+                            $title = substr($title, 0, 4).'(..)';
                         }
 						$events = empty($events) ? '' : $events;
-                        $events .= '<br />'.'<a href="'.$link.$file.'&month='.$_GET['month'].'&year='.$_GET['year'].'">'.$title.'</a>';
+                        //$events .= '<br />'.'<a z href="'.$link.$file.'&month='.$_GET['month'].'&year='.$_GET['year'].'">'.$title.'</a>';
+                        $events .= ' <br />'.'<a href="'.$link.$file.'&month='.$_GET['month'].'&year='.$_GET['year'].'">'.$title.'</a>';
                     } elseif($eventsIF == False) {
                         $events = True;
                     }
@@ -109,7 +109,7 @@ function c_calendar($month, $year, $link, $eventsIF = True) {
         closedir($dir); 
         
         if(isset($events) and ($events == True and $eventsIF == False)) {
-            $css = 'class="eventIS"';
+            $css = 'class="eventIS alert alert-secondary font-weight-bold text-center"';
             $events = '';
             $xml = simplexml_load_file(GSDATAOTHERPATH.'/calendar.xml');
             $calendarPage = $xml->page;
@@ -127,16 +127,16 @@ function c_calendar($month, $year, $link, $eventsIF = True) {
         if($index1 == date('j') and $month == date('n')) {
             if($css == 'class="eventIS"') $css = 'class="today eventIS"'; else
                 $css = 'class="today"';
-            echo '<td class="today" '.$css.'>'.$li.$index1.$nk.$events.'</td>';
+            echo '<td class="today bg-white text-center" '.$css.'>'.$li.$index1.$nk.$events.'</td>';
         } else {
             # Sprawdzanie, czy dziś niedziela
             $css = empty($css) ? '' : $css;
 			if(date('w', mktime(0,0,0,$month,$index1,$year)) == 0){
-                if($css == 'class="eventIS"') $css = 'class="redDay eventIS"'; else
-                    $css = 'class="redDay"';
+                if($css == 'class="eventIS"') $css = 'class="redDay eventIS "'; else
+                    $css = 'class="redDay bg-danger text-white text-center"';
                 echo '<td '.$css.'>'.$li.$index1.$nk.$events.'</td>';
             } else {
-						echo '<td '.$css.'>'.$li.$index1.$nk.$events.'</td>';
+						echo '<td class="text-center" '.$css.'>'.$li.$index1.$nk.$events.'</td>';
 					}
         }
         

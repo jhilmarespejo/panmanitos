@@ -1,45 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Fri, 14 Aug 2020 15:37:55 -0430</pubDate><title><![CDATA[Pagina 5]]></title><url><![CDATA[pagina-5]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Nutrición]]></menu><menuOrder><![CDATA[4]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;Developer Information&lt;/p&gt;
+<item>
+	<pubDate>Fri, 04 Sep 2020 14:46:20 -0400</pubDate>
+	<title><![CDATA[Pagina 5]]></title>
+	<url><![CDATA[pagina-5]]></url>
+	<meta><![CDATA[]]></meta>
+	<metad><![CDATA[]]></metad>
+	<menu><![CDATA[Nutrición]]></menu>
+	<menuOrder><![CDATA[4]]></menuOrder>
+	<menuStatus><![CDATA[Y]]></menuStatus>
+	<template><![CDATA[template.php]]></template>
+	<parent><![CDATA[]]></parent>
 
-&lt;p&gt;Advanced Features&lt;/p&gt;
+	<content><![CDATA[&lt;p&gt;p5&lt;/p&gt;]]></content>
 
-&lt;p&gt;Debugging&lt;/p&gt;
-
-&lt;p&gt;Change the Admin Password to Salted&lt;/p&gt;
-
-&lt;p&gt;Page Caching/Indexing&lt;/p&gt;
-
-&lt;p&gt;Advanced Configuration: gsconfig.php&lt;/p&gt;
-
-&lt;p&gt;Tweak/Configure the .htaccess File&lt;/p&gt;
-
-&lt;p&gt;GetSimple SVN Access&lt;/p&gt;
-
-&lt;p&gt;CSRF Protection&lt;/p&gt;
-
-&lt;p&gt;How to setup GetSimple on HTTPS/SSL&lt;/p&gt;
-
-&lt;p&gt;Lighttpd Permalinks&lt;/p&gt;
-
-&lt;p&gt;CKEditor Configuration&lt;/p&gt;
-
-&lt;p&gt;Advanced Editor Configuration&lt;/p&gt;
-
-&lt;p&gt;CKEditor Configuration Files&lt;/p&gt;
-
-&lt;p&gt;Language configuration&lt;/p&gt;
-
-&lt;p&gt;More Editor Options&lt;/p&gt;
-
-&lt;p&gt;How to integrate SyntaxHighLighting in the editor&lt;/p&gt;
-
-&lt;p&gt;Editor Toolbars&lt;/p&gt;
-
-&lt;p&gt;Advanced Theming&lt;/p&gt;
-
-&lt;p&gt;Partial Template Files and Functions File&lt;/p&gt;
-
-&lt;p&gt;Admin Themes&lt;/p&gt;
-
-&lt;p&gt;Plugin development&lt;/p&gt;
-]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>
+	<private><![CDATA[]]></private>
+	<author><![CDATA[admin]]></author>
+</item>

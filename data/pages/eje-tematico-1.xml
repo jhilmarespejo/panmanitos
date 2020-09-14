@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 11 Sep 2020 15:23:20 -0400</pubDate><title><![CDATA[Familia segura]]></title><url><![CDATA[eje-tematico-1]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Eje tematico 1]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;div class=&quot;accordion&quot; id=&quot;accordionExample&quot;&gt;
+	&lt;div class=&quot;card&quot;&gt;
+		&lt;div class=&quot;card-header&quot; id=&quot;headingOne&quot;&gt;
+			&lt;h2 class=&quot;mb-0&quot;&gt;&lt;button aria-controls=&quot;collapseOne&quot; aria-expanded=&quot;true&quot; class=&quot;btn btn-link btn-block text-left&quot; data-target=&quot;#collapseOne&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;OBJETIVO GENERAL&lt;/button&gt;&lt;/h2&gt;
+		&lt;/div&gt;
+
+		&lt;div aria-labelledby=&quot;headingOne&quot; class=&quot;collapse show&quot; data-parent=&quot;#accordionExample&quot; id=&quot;collapseOne&quot;&gt;
+			&lt;div class=&quot;card-body&quot;&gt;Sensibilizar a la madre, padre o tutor de las niñas y niños que pertenecen a los Centros Infantiles Pan Manitos, facilitando técnicas educativas basadas en el dialogo y la intervención en la familia que elimine el riesgo de acciones violentas proporcionando formas positivas y no violentas para la educación de los niños.&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;card&quot;&gt;
+		&lt;div class=&quot;card-header&quot; id=&quot;education&quot;&gt;
+			&lt;h2 class=&quot;mb-0&quot;&gt;&lt;button aria-controls=&quot;collapseTwo&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-link btn-block text-left collapsed&quot; data-target=&quot;#collapseTwo&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;EDUCACIÓN&lt;/button&gt;&lt;/h2&gt;
+		&lt;/div&gt;
+
+		&lt;div aria-labelledby=&quot;education&quot; class=&quot;collapse&quot; data-parent=&quot;#accordionExample&quot; id=&quot;collapseTwo&quot;&gt;
+			&lt;div class=&quot;card-body&quot;&gt;Aproximar a las niñas y niños a la perspectiva de equidad de género, desnaturalizando los valores tradicionalmente esperados para varones y mujeres con intervención en la familia. &lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;card&quot;&gt;
+		&lt;div class=&quot;card-header&quot; id=&quot;psychology&quot;&gt;
+			&lt;h2 class=&quot;mb-0&quot;&gt;&lt;button aria-controls=&quot;collapseThree&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-link btn-block text-left collapsed&quot; data-target=&quot;#collapseThree&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;PSICOLOGÍA&lt;/button&gt;&lt;/h2&gt;
+		&lt;/div&gt;
+
+		&lt;div aria-labelledby=&quot;psychology&quot; class=&quot;collapse&quot; data-parent=&quot;#accordionExample&quot; id=&quot;collapseThree&quot;&gt;
+			&lt;div class=&quot;card-body&quot;&gt;Promover la práctica   y desarrollo de actitudes positivas en los hogares, para la resolución de los conflictos evitando así el uso de cualquier forma de violencia en la educación de los niños y niñas.
+				
+				&lt;!-- Button trigger modal --&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#staticBackdrop&quot;&gt;
+				  Documento
+				&lt;/button&gt;
+
+				&lt;!-- Modal --&gt;
+				&lt;div class=&quot;modal fade&quot; id=&quot;staticBackdrop&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;staticBackdropLabel&quot; aria-hidden=&quot;true&quot;&gt;
+				  &lt;div class=&quot;modal-dialog modal-lg &quot;&gt;
+	    			&lt;div class=&quot;modal-content&quot;&gt;
+	    				&lt;div class=&quot;modal-footer&quot;&gt;
+					        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Cerrar&lt;/button&gt;
+					      &lt;/div&gt;
+					    &lt;div class=&quot;modal-body&quot;&gt;
+					    	&lt;embed src=&quot;data/uploads/ejetem1/psychology/psicologia-familiasegura.pdf&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500px&quot;&gt;
+						&lt;/div&gt;
+				      
+				    &lt;/div&gt;
+				  &lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;card&quot;&gt;
+		&lt;div class=&quot;card-header&quot; id=&quot;socialWork&quot;&gt;
+			&lt;h2 class=&quot;mb-0&quot;&gt;&lt;button aria-controls=&quot;collapseSocialWork&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-link btn-block text-left collapsed&quot; data-target=&quot;#collapseSocialWork&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;TRABAJO SOCIAL&lt;/button&gt;&lt;/h2&gt;
+		&lt;/div&gt;
+
+		&lt;div aria-labelledby=&quot;socialWork&quot; class=&quot;collapse&quot; data-parent=&quot;#accordionExample&quot; id=&quot;collapseSocialWork&quot;&gt;
+			&lt;div class=&quot;card-body&quot;&gt;Sensibilizar a las familias sobre el tema de la violencia infantil fomentando la práctica de los valores humanos con el deseo de prevenir aquellas situaciones en las que se vulneran los derechos de la infancia.  
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;card&quot;&gt;
+		&lt;div class=&quot;card-header&quot; id=&quot;health&quot;&gt;
+			&lt;h2 class=&quot;mb-0&quot;&gt;&lt;button aria-controls=&quot;collapseHealth&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-link btn-block text-left collapsed&quot; data-target=&quot;#collapseHealth&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;SALUD&lt;/button&gt;&lt;/h2&gt;
+		&lt;/div&gt;
+
+		&lt;div aria-labelledby=&quot;health&quot; class=&quot;collapse&quot; data-parent=&quot;#accordionExample&quot; id=&quot;collapseHealth&quot;&gt;
+			&lt;div class=&quot;card-body&quot;&gt;Identificar la frecuencia de presencia de enfermedades respiratorias agudas y enfermedades diarréicas en los niños.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;card&quot;&gt;
+		&lt;div class=&quot;card-header&quot; id=&quot;nutrition&quot;&gt;
+			&lt;h2 class=&quot;mb-0&quot;&gt;&lt;button aria-controls=&quot;collapseNutrition&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-link btn-block text-left collapsed&quot; data-target=&quot;#collapseNutrition&quot; data-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;NUTRICIÓN&lt;/button&gt;&lt;/h2&gt;
+		&lt;/div&gt;
+
+		&lt;div aria-labelledby=&quot;nutrition&quot; class=&quot;collapse&quot; data-parent=&quot;#accordionExample&quot; id=&quot;collapseNutrition&quot;&gt;
+			&lt;div class=&quot;card-body&quot;&gt;Trabajar con la madre, padre o tutor de la niña y/o niño sobre la importancia de llevar a su niño al centro de salud para su seguimiento en su estado nutricional y la suplementación de micronutrientes necesarias en la primera infancia para evitar y tratar a tiempo casos de desnutrición y enfermedades diarréicas.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+&lt;/div&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

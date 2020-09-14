@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Fri, 14 Aug 2020 15:37:01 -0430</pubDate><title><![CDATA[Pagina 3]]></title><url><![CDATA[pagina-3]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Protección]]></menu><menuOrder><![CDATA[2]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;Multi-User Capabilities&lt;/p&gt;
+<item><pubDate>Tue, 08 Sep 2020 10:08:17 -0400</pubDate><title><![CDATA[Pagina 3]]></title><url><![CDATA[pagina-3]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Protección]]></menu><menuOrder><![CDATA[2]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;script type=&quot;text/javascript&quot;&gt;
+google.load(&quot;visualization&quot;, &quot;1&quot;, {packages:[&quot;corechart&quot;]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
 
-&lt;p&gt;Languages&lt;/p&gt;
+var data = google.visualization.arrayToDataTable([
+         [&#039;Element&#039;, &#039;Density&#039;, { role: &#039;style&#039; }, { role: &#039;annotation&#039; } ],
+         [&#039;Copper&#039;, 8.94, &#039;#b87333&#039;, &#039;asf&#039; ],
+         [&#039;Silver&#039;, 10.49, &#039;silver&#039;, &#039;rge&#039; ],
+         [&#039;Gold&#039;, 19.30, &#039;gold&#039;, &#039;19.30&#039;],
+         [&#039;Platinum&#039;, 21.45, &#039;color: #e5e4e2&#039;, &#039;21.45&#039; ]
+      ]);
+var options = {
+title: &#039;Informe de Ventas/Gastos&#039;,
+hAxis: {title: &#039;Años&#039;, titleTextStyle: {color: &#039;red&#039;}}
+};
 
-&lt;p&gt;languages&lt;/p&gt;
-
-&lt;p&gt;translate&lt;/p&gt;
-
-&lt;p&gt;Plugins &amp;amp; Languages (I18N)&lt;/p&gt;
-
-&lt;p&gt;Built in Language Internationalization Hashes (I18N)&lt;/p&gt;
-
-&lt;p&gt;Proposal for the Use of Transifex&lt;/p&gt;
-
-&lt;p&gt;Tutorials, Tips and How-tos&lt;/p&gt;
-
-&lt;p&gt;Theme Creation Tutorial&lt;/p&gt;
-
-&lt;p&gt;Extra Security for GetSimple&lt;/p&gt;
-
-&lt;p&gt;Accessibility Features&lt;/p&gt;
-
-&lt;p&gt;Components Depending On The Page&lt;/p&gt;
-
-&lt;p&gt;Multi-Level Navigation&lt;/p&gt;
-
-&lt;p&gt;SEO for GetSimple&lt;/p&gt;
-
-&lt;p&gt;Using Extend&lt;/p&gt;
+var chart = new google.visualization.ColumnChart(document.getElementById(&#039;chart_div&#039;));
+chart.draw(data, options);
+}
+&lt;/script&gt;
+&lt;div id=&quot;chart_div&quot; style=&quot;width: 900px; height: 500px;&quot;&gt;&amp;nbsp;&lt;/div&gt;
 ]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

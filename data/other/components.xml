@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channel><item><title><![CDATA[gallery]]></title><slug>gallery</slug><value><![CDATA[]]></value></item><item><title><![CDATA[index_image_gallery]]></title><slug>index_image_gallery</slug><value><![CDATA[&lt;?php if (function_exists(&#039;GetMyGallery&#039;)) { print GetMyGallery(&#039;805ed3e038b8fd8&#039;); } ?&gt;
-&lt;/div&gt;]]></value></item><item><title><![CDATA[index_video_gallery]]></title><slug>index_video_gallery</slug><value><![CDATA[&lt;div id=&quot;videoCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+<channel><item><title><![CDATA[index_calendar]]></title><slug>index_calendar</slug><value><![CDATA[ &lt;?php c_calendarMini(); ?&gt;]]></value></item><item><title><![CDATA[index_image_gallery]]></title><slug>index_image_gallery</slug><value><![CDATA[&lt;?php if (function_exists(&#039;GetMyGallery&#039;)) { print GetMyGallery(&#039;805ed3e038b8fd8&#039;); } ?&gt;
+&lt;/div&gt;]]></value></item><item><title><![CDATA[index_video_gallery]]></title><slug>index_video_gallery</slug><value><![CDATA[&lt;div id=&quot;videoCarousel&quot; class=&quot;carousel slide card border border-warning&quot; data-ride=&quot;carousel&quot;&gt;
   &lt;div class=&quot;carousel-inner&quot;&gt;
-    &lt;div class=&quot;card-body carousel-item video-responsive active&quot; &gt;
-      &lt;iframe  src=&quot;https://www.youtube.com/embed/jC9M_-s-nu4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;div class=&quot;card-body carousel-item active&quot; &gt;
+      &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+        &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/jC9M_-s-nu4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;card-body carousel-item video-responsive&quot; &gt;
-      &lt;iframe  src=&quot;https://www.youtube.com/embed/MZz8gt4WStU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;div class=&quot;card-body carousel-item&quot; &gt;
+      &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+        &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/MZz8gt4WStU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;card-body carousel-item video-responsive&quot; &gt;
-      &lt;iframe  src=&quot;https://www.youtube.com/embed/AI4272ErnkA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;div class=&quot;card-body carousel-item&quot; &gt;
+      &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+        &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/AI4272ErnkA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+
   &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#videoCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
     &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Previo&lt;/span&gt;
   &lt;/a&gt;
   &lt;a class=&quot;carousel-control-next&quot; href=&quot;#videoCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
     &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Siguiente&lt;/span&gt;
   &lt;/a&gt;
-&lt;/div&gt;]]></value></item><item><title><![CDATA[mission_vision]]></title><slug>mission_vision</slug><value><![CDATA[&lt;div class=&quot;container text-center&quot;&gt;
-  &lt;h2 class=&quot;font-weight-light component&quot;&gt;Misión y Visión del Programa &lt;/h2&gt;
+&lt;/div&gt;
+
+  ]]></value></item><item><title><![CDATA[mission_vision]]></title><slug>mission_vision</slug><value><![CDATA[&lt;div class=&quot;container text-center&quot;&gt;
+  &lt;h2 class=&quot;font-weight-light&quot;&gt;Misión y Visión del Programa &lt;/h2&gt;
   &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-sm mission&quot;&gt;
       &lt;div class=&quot;card card-body&quot; style=&quot;&quot;&gt;
@@ -55,57 +64,58 @@
 &lt;li&gt;Growing community&lt;/li&gt; 
 &lt;/ul&gt;
 &lt;p&gt;This is your sidebar text. Please change me in &lt;em&gt;Theme -&gt; Edit Components&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://get-simple.info/download/&quot;&gt;Download the Latest GetSimple&lt;/a&gt;&lt;/p&gt;]]></value></item><item><title><![CDATA[temathic]]></title><slug>temathic</slug><value><![CDATA[&lt;div class=&quot;container text-center my-3&quot;&gt;
-    &lt;h2 class=&quot;font-weight-light component&quot;&gt;Ejes temáticos&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://get-simple.info/download/&quot;&gt;Download the Latest GetSimple&lt;/a&gt;&lt;/p&gt;]]></value></item><item><title><![CDATA[statistics]]></title><slug>statistics</slug><value><![CDATA[&lt;?php if (function_exists(&#039;GetMyGallery&#039;)) { print GetMyGallery(&#039;225f5f7acd484aa&#039;); } ?&gt;]]></value></item><item><title><![CDATA[temathic]]></title><slug>temathic</slug><value><![CDATA[&lt;div class=&quot;container text-center my-3&quot;&gt;
+    &lt;h2 class=&quot;font-weight-light component&quot;&gt;Atención Integral y Cuidado Diario Desde la familia a Niñas y Niños &lt;/h2&gt;
+ &lt;h2 class=&quot;font-weight-light component&quot;&gt;Ejes temáticos&lt;/h2&gt;
     &lt;div class=&quot;row mx-auto my-auto&quot;&gt;
         &lt;div id=&quot;temathicCarousel&quot; class=&quot;carousel temathic-carousel slide w-100&quot; data-ride=&quot;carousel&quot;&gt;
             &lt;div class=&quot;carousel-inner w-100&quot; role=&quot;listbox&quot;&gt;
                 &lt;div class=&quot;carousel-item active&quot;&gt;
                     &lt;div class=&quot;col-md-4&quot;&gt;
-                        &lt;div class=&quot;card card-body&quot;&gt;
-                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=1&quot;&gt;
+                       &lt;div class=&quot;card card-body&quot;&gt;
+                            &lt;a href=&quot;&lt;?php get_site_url(); ?&gt;eje-tematico-1&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;&lt;?php get_theme_url(); ?&gt;/images/temathic/temathic1.jpg&quot;&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;carousel-item&quot;&gt;
                     &lt;div class=&quot;col-md-4&quot;&gt;
                         &lt;div class=&quot;card card-body&quot;&gt;
-                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=2&quot;&gt;
+                            &lt;a href=&quot;&lt;?php get_site_url(); ?&gt;eje-tematico-2&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;&lt;?php get_theme_url(); ?&gt;/images/temathic/temathic2.jpg&quot;&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;carousel-item&quot;&gt;
                     &lt;div class=&quot;col-md-4&quot;&gt;
                         &lt;div class=&quot;card card-body&quot;&gt;
-                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=3&quot;&gt;
+                            &lt;a href=&quot;&lt;?php get_site_url(); ?&gt;/#&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;&lt;?php get_theme_url(); ?&gt;/images/temathic/temathic3.jpg&quot;&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;carousel-item&quot;&gt;
                     &lt;div class=&quot;col-md-4&quot;&gt;
                         &lt;div class=&quot;card card-body&quot;&gt;
-                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=4&quot;&gt;
+                            &lt;a href=&quot;&lt;?php get_site_url(); ?&gt;/#&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;&lt;?php get_theme_url(); ?&gt;/images/temathic/temathic4.jpg&quot;&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;carousel-item&quot;&gt;
                     &lt;div class=&quot;col-md-4&quot;&gt;
                         &lt;div class=&quot;card card-body&quot;&gt;
-                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=5&quot;&gt;
+                            &lt;a href=&quot;&lt;?php get_site_url(); ?&gt;/#&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;&lt;?php get_theme_url(); ?&gt;/images/temathic/temathic5.jpg&quot;&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;carousel-item&quot;&gt;
                     &lt;div class=&quot;col-md-4&quot;&gt;
                         &lt;div class=&quot;card card-body&quot;&gt;
-                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=6&quot;&gt;
+                            &lt;a href=&quot;&lt;?php get_site_url(); ?&gt;/#&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;&lt;?php get_theme_url(); ?&gt;/images/temathic/temathic6.jpg&quot;&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;carousel-item&quot;&gt;
                     &lt;div class=&quot;col-md-4&quot;&gt;
                         &lt;div class=&quot;card card-body&quot;&gt;
-                            &lt;img class=&quot;img-fluid&quot; src=&quot;http://placehold.it/380?text=6&quot;&gt;
+                            &lt;a href=&quot;&lt;?php get_site_url(); ?&gt;/#&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;&lt;?php get_theme_url(); ?&gt;/images/temathic/temathic7.jpg&quot;&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -123,7 +133,7 @@
 &lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
     $(&#039;#temathicCarousel&#039;).carousel({
-      interval: 5000
+      interval: 4000
     })
 
     $(&#039;.temathic-carousel .carousel-item&#039;).each(function(){

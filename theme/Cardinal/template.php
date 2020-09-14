@@ -11,13 +11,15 @@
 	<meta charset="utf-8">
 	<link rel="icon" href="<?php get_theme_url(); ?>/images/favicon.ico" type="image/x-icon" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/bootstrap451/css/bootstrap.css" media="screen" /> 
 	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/bootstrap451/css/bootstrap-grid.min.css" media="screen" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 	<script src="<?php get_theme_url(); ?>/bootstrap451/js/jquery.min.js"></script> 
 	<script src="<?php get_theme_url(); ?>/bootstrap451/js/bootstrap.min.js"></script> 
+	<!-- <script src="<?php get_theme_url(); ?>/bootstrap451/js/loader.js"></script>  -->
 </head>
 <body id="<?php get_page_slug(); ?>" >
 	<div class="row jumbotron jumbotron-fluid " id="headerMenu">
@@ -112,6 +114,8 @@
 		</div>
 	<?php endif; ?>
 
+
+
 	<div class="container index">
 		
 		<div id="content">
@@ -119,7 +123,7 @@
 				<div id="page-content">
 					<div class="page-text">
 						<?php get_page_content(); ?>
-						<p class="page-meta">Fecha de publiación: &nbsp;<span><?php get_page_date('F jS, Y'); ?></span></p>
+						<!-- <p class="page-meta">Fecha de publiación: &nbsp;<span><?//php get_page_date('F jS, Y'); ?></span></p> -->
 					</div>
 				</div>
 		</div>	
@@ -135,11 +139,24 @@
 					<div class="container text-center">
 					  <h2 class="font-weight-light component">Galería de imagenes y videos</h2>
 					  <div class="row">
-					    <div class="col-sm video-g ">
+					    <div class="col-sm video-g " >
 					    	<?php get_component('index_video_gallery'); ?>
 					    </div>
-					    <div class="col-sm image-g ">
+					    <div class="col-sm image-g fadeInRight" >
 					    	<?php get_component('index_image_gallery'); ?>
+					    </div>
+					  </div>
+					</div>
+					<br><br>
+					<div class="container text-center">
+					  <div class="row mx-auto">
+					    <div class="col-sm index-calendar card">
+					  		<h2 class="font-weight-light component">Calendario de actividades</h2>
+					    	<?php get_component('index_calendar'); ?>
+					    </div>
+					    <div class="col-sm index-statistics " >
+					    	<h2 class="font-weight-light component">Estad&iacute;sticas</h2>
+					    	<?php get_component('statistics'); ?>
 					    </div>
 					  </div>
 					</div>
@@ -155,6 +172,10 @@
 		
 		<div class="clear"></div>
 		
+
+			
+
+
 		<?php get_footer(); ?>
 	</div> <!-- end <div class="container"> -->
 
@@ -162,17 +183,29 @@
 <footer class="img-fluid foot-one">xxxxxl</footer>
 </html>
 <script type="text/javascript">
-	$( document ).ready(function() {
-		$('#headerCarousel').carousel({
-			interval: 90000
-		})
+$( document ).ready(function() {
+	$('#headerCarousel').carousel({
+		interval: 90000
+	})
 
-		$('.video-carousel').carousel({
-			interval: 5000
-		})
+	$('#videoCarousel').carousel({
+		interval: 3000
+	})
 
-		$('#imageGalleryCarousel').carousel({
-			interval: 1000
-		})
-	});
+	$('#imageGalleryCarousel').carousel({
+		interval: 5000
+	})
+	$('#imageGalleryCarousel').addClass('border border-warning');
+
+	if (screen.width < 770) { 
+	   $('.index-calendar table tr td, .index-calendar table tr th').css({ "padding": "0rem"});
+	   
+
+	} else{
+		$('.index-calendar table tr td, .index-calendar table tr th').css({ "padding": "0.75rem"});
+	
+	}
+
+	
+});
 </script>

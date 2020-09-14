@@ -1,9 +1,8 @@
 <?php
 if(!isset($_GET['month'])) $_GET['month'] = date('n');
 if(!isset($_GET['year'])) $_GET['year'] = date('Y');
-?>
-<?php
-if(isset($_GET['event']) and !empty($_GET['event'])) {
+
+if(isset($_GET['event']) and !empty($_GET['event'])):
     $file = $_GET['event'].'.xml';
     $xml = simplexml_load_file(GSDATAOTHERPATH.'/calendar/'.$file);
     $title = $xml->title;
@@ -16,12 +15,10 @@ if(isset($_GET['event']) and !empty($_GET['event'])) {
     echo '<h4>'.$title.'</h4>';
     echo $date.'<br />';
     echo '<br />'.$contents;
-    ?>
-    
-<?php } ?>
-<link type="text/css" href="<?php get_site_url(); ?>/plugins/calendar/css/calendar.css" rel="stylesheet" />
-<table id="calendar">
-    <tr>        
+endif; ?>
+<!-- <link type="text/css" href="<?php get_site_url(); ?>/plugins/calendar/css/calendar.css" rel="stylesheet" /> -->
+<table class="table table-hover table-bordered" id="bigCalendar">
+    <tr class="thead-yellow">        
         <th><?php i18n('calendar/Monday'); ?></th>
         <th><?php i18n('calendar/Tuesday'); ?></th>
         <th><?php i18n('calendar/Wednesday'); ?></th>

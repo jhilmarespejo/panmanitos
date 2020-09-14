@@ -1,54 +1,55 @@
 <div class="container text-center my-3">
-    <h2 class="font-weight-light">Ejes temáticos</h2>
+    <h2 class="font-weight-light component">Atención Integral y Cuidado Diario Desde la familia a Niñas y Niños </h2>
+ <h2 class="font-weight-light component">Ejes temáticos</h2>
     <div class="row mx-auto my-auto">
         <div id="temathicCarousel" class="carousel temathic-carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
                 <div class="carousel-item active">
                     <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=1">
+                       <div class="card card-body">
+                            <a href="<?php get_site_url(); ?>/eje-tematico-1"><img class="img-fluid" src="<?php get_theme_url(); ?>/images/temathic/temathic1.jpg"></a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=2">
+                            <a href="<?php get_site_url(); ?>/eje-tematico-2"><img class="img-fluid" src="<?php get_theme_url(); ?>/images/temathic/temathic2.jpg"></a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=3">
+                            <a href="<?php get_site_url(); ?>/#"><img class="img-fluid" src="<?php get_theme_url(); ?>/images/temathic/temathic3.jpg"></a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=4">
+                            <a href="<?php get_site_url(); ?>/#"><img class="img-fluid" src="<?php get_theme_url(); ?>/images/temathic/temathic4.jpg"></a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=5">
+                            <a href="<?php get_site_url(); ?>/#"><img class="img-fluid" src="<?php get_theme_url(); ?>/images/temathic/temathic5.jpg"></a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=6">
+                            <a href="<?php get_site_url(); ?>/#"><img class="img-fluid" src="<?php get_theme_url(); ?>/images/temathic/temathic6.jpg"></a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=6">
+                            <a href="<?php get_site_url(); ?>/#"><img class="img-fluid" src="<?php get_theme_url(); ?>/images/temathic/temathic7.jpg"></a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +67,7 @@
 </div>
 <script type="text/javascript">
     $('#temathicCarousel').carousel({
-      interval: 1000
+      interval: 4000
     })
 
     $('.temathic-carousel .carousel-item').each(function(){
